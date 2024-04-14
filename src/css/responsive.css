@@ -1,6 +1,5 @@
 @media (max-width: 768px){
     body {
-        background-color: var(--main-color);
         padding: 32px 34px;
     }
 
@@ -32,7 +31,7 @@
     }
 
     .information p {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .information .register {
@@ -40,44 +39,32 @@
         padding: 10px;
     }
 
-    .footer {
+    .footer nav ul {
         justify-content: center;
     }
 
-    .footer a {
+    .footer nav ul li a {
         margin: 0 8px;
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 425px){
     body {
-        background: url('../images/bg-mobile.svg') no-repeat;
-        background-color: var(--main-color);
+        background: var(--main-color) url('../images/bg-mobile.svg') no-repeat;
+        background-size: contain;
     }
 
     .logo a img{
         width: 125px;
     }
 
-    .hero {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
+    .illustration {
+        width: 80vw;
     }
 
     .information {
-        align-items: center;
         justify-content: center;
-        text-align: center;
-        margin: 50px 0;
-    }
-
-    .information h1 {
-        font-size: 2.5rem;
-    }
-
-    .information p {
-        font-size: 1.6rem;
+        width: 90%;
     }
 
     .information .register {
@@ -85,11 +72,13 @@
         padding: 10px;
     }
 
-    .footer {
+    .footer nav ul{
         justify-content: center;
     }
 
-    .footer a {
-        margin: 0 8px;
+    .footer nav ul li a i {
+        font-size: 1.2rem;
+        width: 37px;
+        height: 37px;
     }
 }
