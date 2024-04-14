@@ -2,13 +2,13 @@
 
 html {
     font-size: 62.5%;
+    max-width: 1440px;
 }
 
 body {
     font-family: 'Open Sans';
     color: #fff;
-    background: url('../images/bg-desktop.svg') no-repeat;
-    background-color: var(--main-color);
+    background: var(--main-color) url('../images/bg-desktop.svg') no-repeat;
     padding: 25px 70px;
     height: 100vh;
 }
@@ -33,11 +33,6 @@ body {
 
 .illustrattion {
     grid-area: illustration;
-}
-
-.illustration img {
-    max-height: 100%;
-    max-width: 100%;
 }
 
 .information {
@@ -71,6 +66,7 @@ body {
     width: 200px;
     text-align: center;
     transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px #000;
 }
 
 .information .register:hover {
@@ -78,18 +74,17 @@ body {
     background-color: var(--hover-color);
 }
 
-.footer {
+.footer nav ul {
     color: #000;
     display: flex;
     justify-content: flex-end;
-    align-content: flex-start;
 }
 
-.footer a {
+.footer nav ul li a {
     margin-left: 15px;
 }
 
-.footer a i {
+.footer nav ul li a i {
     font-size: 1.8rem;
     padding: 12px;
     border: #fff solid 1px;
@@ -100,7 +95,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.footer a i:hover {
+.footer nav ul li a i:hover {
     color: var(--hover-color);
     border-color: var(--hover-color);
 }
